@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> introduction </title>
+    <style>
+        Body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-image: url(11.jpg);
+            
+            /* background-repeat: no-repeat; */
+           
+        }
+
+        button {
+            /* background-color: #72c8f0;    */
+            /* width: 100%;   */
+            color: rgb(255, 0, 25);
+            padding: 15px;
+            margin: 5px 0px;
+            display: block;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=text],
+        input[type=password] {
+            /* width: 100%;    */
+            color:rgb(13, 20, 13);
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: block;
+            border: 2px solid green;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        form{
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .cancelbtn {
+            /* width: auto;    */
+            padding: 10px 18px;
+            margin: 10px 5px;
+            display: block;
+            color:red;
+            /* background-color:black; */
+        }
+
+
+        .container {
+            margin: 30px;
+            padding-left: 450px;
+            padding-bottom: 350px;
+            color: rgb(8, 39, 151);
+            /* background-color: lightblue;   */
+        }
+        #s{
+            color:red;
+        }
+        .mys{
+
+        }
+    </style>
+</head>
+
+<body>
+<center><h1 font="bold" font-color="green"> CAMP TECH </h1>
+    <img style="height:100px ;" src="2.jpg">
+
+    </center>
+  
+    <form action="./main.html" method="get">
+        <div class="container">
+            
+          <span> Username: <input type="text" placeholder="Enter Username" name="username" id="name"></span>
+           Phone number: <input type="text" placeholder="Enter phone number" name="phone number" id="phone"> </input>
+            <button  type="submit" class="mys">get started</button>
+            <script>
+                document.getElementsByClassName("mys").onClicked=function trail()
+                { num=document.getElementById("phone")
+                const temp=num.toString();
+                const names=document.getElementById("name")
+                if(temp.length!=10)
+                {
+                    names.innerHTML='';
+                    num.innerHTML='';
+                    alert("enter proper details");
+                }}
+               </script>
+           
+            <button type="button" class="cancelbtn"><a href="https://google.com">Cancel</a></button>
+          <!-- <a href="google.com"><div id="s">Forgot  password? </div></a> -->
+        </div>
+    </form>
+    
+</body>
+</html>
